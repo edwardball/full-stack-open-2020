@@ -1,0 +1,12 @@
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note over server:
+server saves notes data
+and tells browser to do a redirect 
+end note
+
+server-->browser: returns 201 {message: "note created"}
+
+note over browser:
+browser adds note data to web page
+end note
